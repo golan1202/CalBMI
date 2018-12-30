@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CalBMI</string>
+    <string name="editWeg">קילוגרם</string>
+    <string name="genderMale">זכר</string>
+    <string name="genderFemale">נקבה</string>
+    <string name="height">גובה</string>
+    <string name="weight">משקל</string>
+    <string name="gendertxt">מה המגדר שלך?</string>
+    <string name="btntxt">לחץ לחיצה ארוכה לתוצאה</string>
+    <string name="clearbtn">נקה</string>
+    <string name="Your_BMI_is">ה BMI שלך הוא:</string>
+    <string name="You_should_eat_more_and_put_on_weight_at_least">צריך להעלות במשקל לפחות עוד </string>
+    <string name="more_kg">ק"ג יותר.</string>
+    <string name="Keep_going_you_aregreat">כל הכבוד!!! משקל תקין</string>
+    <string name="You_should_try_to_do_more_workout_and_need_to_lose_on_weight_at_least">צריך להיכנס לכושר ולהפחית במשקל לפחות </string>
+    <string name="kg"> ק"ג.</string>
+    <string name="You_are_very_fat_and_need_to_lose_on_weight_at_least">חייב דחוף לרדת במשקל לפחות עוד </string>
+    <string name="You_should_try_to_do_more_workout">מומלץ לעשות יותר פעילות גופנית.</string>
+    <string name="clear_btn_txt">לחיצה ארוכה למחיקת הרשימה</string>
+    <string name="List">רשימה</string>
+    <string name="editHei">סנטימטר</string>
+    <string name="average">ה BMI הממוצע הוא</string>
+    <string name="name">שם</string>
+    <string name="hello">שלום</string>
+    <string name="no_males">גברים</string>
+    <string name="no_females">נשים</string>
+
+
+</resources>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="em.example.InfoActivity">
+
+
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_shape"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic" />
+
+
+        <LinearLayout
+            android:id="@+id/name_box"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_image"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:gravity="center">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_name"
+                android:layout_marginStart="10dp"
+                android:text="@string/name"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape2"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/name_box"
+            android:id="@+id/radio_group_layout">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genderMale" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genderFemale" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_image"
+            android:layout_toEndOf="@id/name_box"
+            android:id="@+id/clear_btn_layout"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/shape_selector"
+                android:text="@string/clearbtn"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="3dp"
+                android:text="@string/clear_btn_txt"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/data_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/weight_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/weight"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/weight_input"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_shape2"
+                android:gravity="center"
+                android:hint="@string/editWeg"
+                android:inputType="number"
+                android:padding="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/height_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_box"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="12dp"
+                android:text="@string/height"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/height_input"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:autofillHints="@string/height"
+                android:background="@drawable/btn_shape2"
+                android:gravity="center"
+                android:hint="@string/editHei"
+                android:inputType="number"
+                android:padding="5dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_btn_layout"
+        android:layout_toEndOf="@id/data_box"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp">
+
+
+        <ImageButton
+            android:id="@+id/finish_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="35dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_selector" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:paddingStart="5dp"
+            android:text="@string/btntxt"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/bmi_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data_box"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_res"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/bmi_output"
+        android:padding="10dp">
+
+    </ImageView>
+
+    <com.jjoe64.graphview.helper.GraphViewXML
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/bmi_output"
+        android:layout_toEndOf="@id/image_res"
+        android:paddingTop="15dp"
+        android:title="BMI Graph"
+        app:seriesData="0=0;60=60" />
+
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/graph"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_shape"
+        android:gravity="center"
+        android:text="@string/List"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/scroll_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/list"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/infolayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"></LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/list_avg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_results"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_shape"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/average"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+</RelativeLayout></ScrollView>

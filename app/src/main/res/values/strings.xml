@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CalBMI</string>
+    <string name="editWeg">" kg"</string>
+    <string name="editHei">" cm"</string>
+    <string name="genderMale">male</string>
+    <string name="genderFemale">female</string>
+    <string name="height">height</string>
+    <string name="weight">weight</string>
+    <string name="gendertxt">what is your gender?</string>
+    <string name="btntxt">press long click to result</string>
+    <string name="clearbtn">clear</string>
+    <string name="Your_BMI_is">Your BMI is:</string>
+    <string name="You_should_eat_more_and_put_on_weight_at_least">You should eat more and put on weight at least</string>
+    <string name="more_kg"> more kg.</string>
+    <string name="Keep_going_you_aregreat">Keep going you are great.</string>
+    <string name="You_should_try_to_do_more_workout_and_need_to_lose_on_weight_at_least">You should try to do more workout and need to lose on weight at least</string>
+    <string name="kg"> kg.</string>
+    <string name="You_are_very_fat_and_need_to_lose_on_weight_at_least"> You are very fat and need to lose on weight at least</string>
+    <string name="You_should_try_to_do_more_workout">You should try to do more workout.</string>
+    <string name="clear_btn_txt">long click to clear list</string>
+    <string name="List">LIST</string>
+    <string name="average">"The BMI average is "</string>
+    <string name="name">name</string>
+    <string name="hello">Hello</string>
+    <string name="no_males">males</string>
+    <string name="no_females">females</string>
+
+
+</resources>
